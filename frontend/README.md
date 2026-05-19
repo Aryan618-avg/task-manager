@@ -1,16 +1,40 @@
-# React + Vite
+# Team Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack team task management app with role-based access control.
 
-Currently, two official plugins are available:
+## Live URL
+https://task-manager-eosin-five-50.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## GitHub
+https://github.com/Aryan618-avg/task-manager
 
-## React Compiler
+## Tech Stack
+- **Frontend:** React, Vite, TailwindCSS
+- **Backend:** Node.js, Express.js
+- **Database:** PostgreSQL (Railway)
+- **Auth:** JWT + bcrypt
+- **Deploy:** Railway (backend) + Vercel (frontend)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
+- Signup / Login with JWT authentication
+- Create projects, invite members by email
+- Role-based access: Admin / Member
+- Admin: create and assign tasks
+- Member: update task status
+- Task statuses: Todo, In Progress, Done
+- Overdue task detection
+- Dashboard with stats
 
-## Expanding the ESLint configuration
+## Run Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend
+cd backend
+npm install
+create .env with DATABASE_URL and JWT_SECRET
+npm run dev
+
+### Frontend
+cd frontend
+npm install
+npm run dev
+open http://localhost:5173
